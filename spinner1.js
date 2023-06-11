@@ -1,13 +1,38 @@
-const spinner = function() {
-  const spinnerArr = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|']; // array of spinner characters
+setTimeout(() => {
+  process.stdout.write('\r|   ');
+}, 100);
+
+setTimeout(() => {
+  process.stdout.write('\r/   ');
+}, 300);
+
+setTimeout(() => {
+  process.stdout.write('\r-   ');
+}, 500);
+
+setTimeout(() => {
   
-  for (const line in spinnerArr) {
-    let delay = 50 * line; // delay is the time increment * the line number
-    setTimeout(() => {
-      process.stdout.write(`\r${spinnerArr[line]}   `);
-    }, delay);
-  }
+  process.stdout.write('\r\\   '); 
+}, 700);
 
-};
+setTimeout(() => {
+  process.stdout.write('\r|   ');
+}, 900);
 
-spinner();
+setTimeout(() => {
+  process.stdout.write('\r/   ');
+}, 1100);
+
+setTimeout(() => {
+  process.stdout.write('\r-   ');
+}, 1300);
+
+setTimeout(() => {
+  
+  process.stdout.write('\r\\   '); 
+}, 1500);
+
+setTimeout(() => {
+  process.stdout.write('\r|   ');
+}, 1700);
+
